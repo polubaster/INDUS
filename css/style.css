@@ -7,3 +7,114 @@
   --robotoFont: 'Roboto', sans-serif;
   --ralewayFont: 'Raleway', sans-serif;
 }
+
+body {
+background: #dd3e54;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: var(--robotoFont)
+}
+.mainarea {
+	max-width: 960px;
+	background-color: var( --backgroundColor);
+	margin: 40px auto;
+	border-radius: 4px;
+	padding: 10px 30px;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3)
+}
+.avatar {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px;
+
+}
+.avatar > img {
+	max-width: 100%;
+	border: 5px solid var(--primaryColor);
+	border-radius: 50%;
+}
+.name {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 30px;
+	color: var(--primaryColor)
+}
+.position {
+	margin-top: 10px;
+	color: var(--secondaryColor);
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+}
+p {
+	line-height: 22px;
+	font-size: 16px;
+ }
+.title {
+	color: white;
+	background-color: var(--secondaryColor);
+	border-left: 8px solid var(--primaryColor);
+	box-sizing: border-box;
+	padding: 8px 10px 6px;
+}
+.list {
+	margin: 0;
+	padding: 0;
+
+}
+.list li {
+	padding: 5px 0;
+	line-height: 24px;
+}
+.list.is-info li strong {
+	display: inline-block;
+	width: 300px;
+}
+.skil {
+	overflow: hidden;
+	display: block;
+}
+.skil > p {
+	float: left;
+	width: 65%;
+	margin: 0;
+	padding: 0;
+}
+.skil > .raiting {
+	float: left;
+	width: 35%;
+	display: flex;
+	justify-content: space-around;
+}
+.skil > .raiting > span {
+	display: block;
+	float: left;
+	width: 8px;
+	height: 8px;
+	background-color: transparent;
+	height: 10px;
+	border-radius: 50%;
+
+}
+.skil > .raiting.active_3 span:nth-child(-n+3) {
+	background-color: var(--primaryColor);
+}
+.title.is-arrow {
+	display: inline-block;
+	min-width: 400px;
+}
+.title.is-arrow::before, .title.is-arrow::after {
+	content: '';
+	height: 50%;
+	width: 20px;
+	position: absolute;
+	right: 0;
+	background-image: linear-gradient(270deg, var(--secondaryColor) 0, var(--secondaryColor) 50%,
+		var(--backgroundColor) 50%,
+		var(--backgroundColor) 100%,);
+}
+.title.is-arrow::before {
+	bottom: 0;
+}
+
